@@ -6,18 +6,16 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: vveny's blog
+email: viin99@naver.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-lang: "en"
-url: "http://localhost:4000" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
-disqus_username:
+    하루하루 공부한 내용을 정리하는 블로그입니다! java, Spring Boot, Back-end
+baseurl: '' # the subpath of your site, e.g. /blog
+lang: 'ko'
+url: 'http://localhost:4000' # the base hostname & protocol for your site
+# twitter_username: vveny's Blog
+github_username: vveny
+#disqus_username:
 
 # Build settings
 markdown: kramdown
@@ -31,13 +29,11 @@ excerpt_separator: "\n\n"
 
 # Theme settings
 compress_html:
-  comments: ["<!-- ", " -->"]
-  clippings: all
-  endings: all
-
+    comments: ['<!-- ', ' -->']
+    clippings: all
+    endings: all
 
 sass:
-  style: compressed
-
+    style: compressed
 
 images: '/assets/images'

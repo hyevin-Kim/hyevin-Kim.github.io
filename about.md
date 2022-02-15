@@ -1,19 +1,13 @@
 ---
-bg: "owl.jpg"
+bg: 'about.jpeg'
 layout: page
-title: "About"
-crawlertitle: "Why and how this blog was created"
+title: 'About'
+crawlertitle: 'introduce me'
 permalink: /about/
-summary: "About this blog"
+summary: 'About ME'
 active: about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{{site.twitter_username}} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{{site.github_username}} /
-[jekyll](https://github.com/jekyll/jekyll)
+하루하루 공부한 내용을 기록하는 블로그입니다!<br>
+모두 행복한 하루 보내세요! <br>
+:D!!
