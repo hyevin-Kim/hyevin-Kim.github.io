@@ -1,7 +1,7 @@
 ---
-bg: 'sea.jpg'
+bg: './base/sea.jpg'
 layout: default
-crawlertitle: "vveny's Blog"
+crawlertitle: "VVENY'S BLOG"
 title: 'vveny'
 summary: 'java, Spring Boot <br> Back-end'
 ---
@@ -16,10 +16,10 @@ last %}
 	<li>
 		{% if post.lastmod %}
 		<a href="{{ post.url | relative_url}}">{{ post.title }}</a>
-		<span class="date">{{ post.lastmod | date: "%d-%m-%Y" }}</span>
+		<span class="date">{{ post.lastmod | date: "%Y-%m-%Y" }}</span>
 		{% else %}
 		<a href="{{ post.url | relative_url}}">{{ post.title }}</a>
-		<span class="date">{{ post.date | date: "%d-%m-%Y" }}</span>
+		<span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
 		{% endif %}
 	</li>
 	{% endif %} {% endfor %}

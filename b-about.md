@@ -1,10 +1,10 @@
 ---
-bg: 'about.jpeg'
+bg: "./base/about.jpeg"
 layout: page
-title: 'About'
-crawlertitle: 'introduce me'
+title: "About"
+crawlertitle: "INTRODUCE ME"
 permalink: /about/
-summary: 'About ME'
+#summary:
 active: about
 ---
 
