@@ -3,7 +3,7 @@ bg: './base/about.jpeg'
 layout: page
 title: 'About'
 crawlertitle: 'INTRODUCE ME'
-permalink: /about/
+permalink: /b-about/
 # summary:
 active: about
 ---

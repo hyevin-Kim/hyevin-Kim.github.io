@@ -1,6 +1,6 @@
 /* fonts */
 #search_input {
-	font-family: 'S-CoreDream-1Thin';
+	font-family: "HoengseongHanu";
 	font-weight: 300;
 	font-size: 14px;
 	font-style: italic;
@@ -9,6 +9,10 @@
 #results-container{
 	margin-left: 35px;
 	padding-top: 25px;
+}
+
+.search-results {
+	font-family: "Roboto Condensed", "HoengseongHanu";
 }
 /* search box */
 #search_input {

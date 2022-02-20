@@ -1,8 +1,11 @@
 ---
-bg: './base/big-search.jpeg'
-layout: search
-crawlertitle: 'Search this site'
+bg: './base/big-search.jpg'
+layout: default
 title: 'search'
+crawlertitle: 'Search this site'
+permalink: /c-search/
+# summary:
+active: search
 ---
 
 <div class="nav-span nav-item">
@@ -32,8 +35,9 @@ title: 'search'
 		resultsContainer: document.getElementById('results-container'),
 		json: '/search.json',
 		searchResultTemplate:
-			'<article class="index-page"><a href="{url}" style="text-decoration:none" class="font-add">{title}</a></article>',
-		noResultsText: 'No results found',
+			'<article class="index-page"><a href="{url}" style="text-decoration:none" class="search-results">{title}</a></article>',
+		noResultsText: 
+			'<spen class="search-results">No results found</spen>',
 		limit: 10000,
 		fuzzy: false,
 		exclude: ['Welcome'],
