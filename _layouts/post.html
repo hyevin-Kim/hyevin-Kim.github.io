@@ -16,6 +16,14 @@ layout: default
 
   <div class="post-content">
 
+    <details>
+      <summary>🙌 목차</summary>
+      <div class="toc">
+        <a href="#">&lt;맨 위로&gt;</a>
+        {% include toc.html html=content %}
+      </div>
+    </details>
+
     {{ content }}
 
     <div class="post-links">
