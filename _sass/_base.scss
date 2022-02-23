@@ -313,3 +313,12 @@ summary {
 	cursor: -webkit-zoom-in;
 	cursor: zoom-in;
 }
+
+/*태그부분*/
+.tag{
+	text-transform:lowercase;
+	border: 0.5px solid;
+	border-radius: 4px;
+	padding: 2px;
+	margin-right: 3px;
+}

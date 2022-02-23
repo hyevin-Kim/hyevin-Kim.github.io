@@ -6,9 +6,55 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Feb 2022 16:16:44 +0900</pubDate>
-    <lastBuildDate>Mon, 21 Feb 2022 16:16:44 +0900</lastBuildDate>
+    <pubDate>Thu, 24 Feb 2022 01:53:11 +0900</pubDate>
+    <lastBuildDate>Thu, 24 Feb 2022 01:53:11 +0900</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>맥(macOS)에서 자바(java) 설치, 이클립스 설치</title>
+        <description>&lt;p&gt;java&lt;/p&gt;
+</description>
+        <pubDate>Wed, 23 Feb 2022 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/java/install-java/</link>
+        <guid isPermaLink="true">http://localhost:4000/java/install-java/</guid>
+        
+        
+        <category>java</category>
+        
+      </item>
+    
+      <item>
+        <title>test</title>
+        <description>&lt;p&gt;java&lt;/p&gt;
+
+&lt;h2 class=&quot;category-key&quot; id=&quot;markdown&quot;&gt;
+    &lt;a href=&quot;/category/markdown&quot;&gt;
+    Markdown
+    &lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;h2 class=&quot;category-key&quot; id=&quot;java&quot;&gt;
+    &lt;a href=&quot;/category/java&quot;&gt;
+    Java
+    &lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;ul class=&quot;year&quot;&gt;
+	      
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 21 Feb 2022 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/java/Mountain/</link>
+        <guid isPermaLink="true">http://localhost:4000/java/Mountain/</guid>
+        
+        <category>test</category>
+        
+        <category>test1</category>
+        
+        
+        <category>java</category>
+        
+      </item>
     
       <item>
         <title>마크다운 기초</title>
@@ -339,86 +385,51 @@ _   underscore
   &lt;p&gt;🔍 &lt;strong&gt;결과&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;details&gt;
-	&lt;summary&gt;접기/펼치기 버튼&lt;/summary&gt;
-	&lt;div&gt;
-    &lt;p&gt;|제목|내용| |–|–| |1|1| |2|10|&amp;lt;/div&amp;gt;
-&amp;lt;/details&amp;gt;&lt;/p&gt;
-
-    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;details&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;details&amp;gt;&lt;/span&gt;
 	&lt;span class=&quot;nt&quot;&gt;&amp;lt;blockquote&amp;gt;&lt;/span&gt;숨김숨김&lt;span class=&quot;nt&quot;&gt;&amp;lt;/blockquote&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/details&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-    &lt;blockquote&gt;
-      &lt;p&gt;🔍 &lt;strong&gt;결과&lt;/strong&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;🔍 &lt;strong&gt;결과&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-    &lt;h3 id=&quot;section&quot;&gt;13. 이모지&lt;/h3&gt;
+&lt;h3 id=&quot;13-이모지&quot;&gt;13. 이모지&lt;/h3&gt;
 
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;‘Window 키’ + ‘;’ 또는 ‘Window 키’ + ‘.’&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;복붙 🔗 &lt;a href=&quot;http://www.iemoji.com/&quot;&gt;http://www.iemoji.com/&lt;/a&gt; 📝✏️✒️💡 🧰 🙋🏻‍♂️&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;‘Window 키’ + ‘;’ 또는 ‘Window 키’ + ‘.’&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;복붙 🔗 &lt;a href=&quot;http://www.iemoji.com/&quot;&gt;http://www.iemoji.com/&lt;/a&gt; 📝✏️✒️💡 🧰 🙋🏻‍♂️&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-    &lt;blockquote&gt;
-      &lt;p&gt;🔍 &lt;strong&gt;결과&lt;/strong&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;🔍 &lt;strong&gt;결과&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-    &lt;h3 id=&quot;section-1&quot;&gt;14. 수학수식&lt;/h3&gt;
+&lt;h3 id=&quot;14-수학수식&quot;&gt;14. 수학수식&lt;/h3&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://khw11044.github.io/blog/blog-etc/2020-12-21-markdown-tutorial2/&quot;&gt;더 자세한 수학수식 사용법&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://khw11044.github.io/blog/blog-etc/2020-12-21-markdown-tutorial2/&quot;&gt;더 자세한 수학수식 사용법&lt;/a&gt;&lt;/p&gt;
 
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$x + y = 1$$
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$x + y = 1$$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-    &lt;blockquote&gt;
-      &lt;p&gt;🔍 &lt;strong&gt;결과&lt;/strong&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/div&gt;&lt;/details&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;🔍 &lt;strong&gt;결과&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
-        <pubDate>Mon, 21 Feb 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/posts/markdown/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/markdown/</guid>
+        <pubDate>Fri, 18 Feb 2022 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/markdown/markdown/</link>
+        <guid isPermaLink="true">http://localhost:4000/markdown/markdown/</guid>
         
-        <category>test</category>
+        <category>git blog</category>
         
-        
-        <category>posts</category>
-        
-      </item>
-    
-      <item>
-        <title>want!</title>
-        <description>&lt;p&gt;&lt;strong&gt;2월 17일 예정&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Feb 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/posts/hi/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/hi/</guid>
-        
-        <category>test</category>
+        <category>markdown</category>
         
         
-        <category>posts</category>
-        
-      </item>
-    
-      <item>
-        <title>java ja?</title>
-        <description>
-</description>
-        <pubDate>Thu, 17 Feb 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/posts/hi-copy/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/hi-copy/</guid>
-        
-        <category>test</category>
-        
-        
-        <category>posts</category>
+        <category>markdown</category>
         
       </item>
     

@@ -12,6 +12,12 @@ layout: default
       &nbsp;/&nbsp;
       <span>{{ page.author }}</span>
     {% endif %}
+    &nbsp;/&nbsp;
+    {% if page.tags %}
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    {% endif %}
   </p>
 
   <div class="post-content">
