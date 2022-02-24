@@ -3,7 +3,7 @@
 
   
   <url>
-    <loc>http://localhost:4000/java/install-java/</loc>
+    <loc>http://localhost:4000/install-java/</loc>
     
       <lastmod>2022-02-23</lastmod>
     
@@ -21,7 +21,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/markdown/markdown/</loc>
+    <loc>http://localhost:4000/gitblog/markdown/</loc>
     
       <lastmod>2022-02-18</lastmod>
     
@@ -30,6 +30,8 @@
   </url>
   
   
+  
+    
   
     
   

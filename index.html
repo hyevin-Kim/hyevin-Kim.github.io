@@ -6,14 +6,14 @@ title: 'vveny'
 summary: 'java, Spring Boot <br> Back-end'
 ---
 
-{% for tag in site.tags %} 
-{% assign t = tag | first %} 
-{% assign posts = tag | last %}
-
-<h2 class="category-key" id="{{ t | downcase }}">{{ t | capitalize }}</h2>
-
+{% for category in site.categories %}
+{% assign cate = category | first %}
+{% for pos in site.pages %}
+{% assign pt = pos.title %}
+{% if cate == pt %}
+<h2 class="category-key" id="{{ pt | downcase }}">{{ pt | capitalize }}</h2>
 <ul class="year">
-	{% for post in posts %} {% if post.tags contains t %}
+	{% for post in site.categories[cate] %}
 	<li>
 		{% if post.lastmod %}
 		<a href="{{ post.url | relative_url}}">{{ post.title }}</a>
@@ -23,7 +23,8 @@ summary: 'java, Spring Boot <br> Back-end'
 		<span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
 		{% endif %}
 	</li>
-	{% endif %} {% endfor %}
+	{% endfor %}
 </ul>
-
+{% endif %}
+{% endfor %}
 {% endfor %}

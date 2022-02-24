@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign category = page.category | default: page.title %}
+{% assign category =  page.category| default: page.title %}
 {% for post in site.categories[category] %}
     <article class="index-page">
         <h4>
