@@ -1,61 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   
-  <url>
-    <loc>http://localhost:4000/install-java/</loc>
-    
-      <lastmod>2022-02-23</lastmod>
-    
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/java/Mountain/</loc>
-    
-      <lastmod>2022-02-21</lastmod>
-    
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/gitblog/markdown/</loc>
-    
-      <lastmod>2022-02-18</lastmod>
-    
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
     <url>
-      <loc>http://localhost:4000/sitemap.xml</loc>
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-    </url>
-    
-  
+      <loc>http://localhost:4000/gitblog/git-blog/</loc>
+      
+        <lastmod>2022-03-01T00:00:00+09:00</lastmod>
+      
 
+      
+        <changefreq>daily</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/install-java/</loc>
+      
+        <lastmod>2022-02-23T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>daily</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/java/Mountain/</loc>
+      
+        <lastmod>2022-02-21T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>daily</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/gitblog/markdown/</loc>
+      
+        <lastmod>2022-02-18T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>daily</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
 </urlset>
