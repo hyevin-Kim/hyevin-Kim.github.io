@@ -1,27 +1,9 @@
 [
     
      {
-       "title"    : "git blog 만들기",
-       "url"      : "/gitblog/git-blog/",
+       "title"    : "[git blog]step00 - 테마 Voyager 적용",
+       "url"      : "/git-blog/git-blog/",
        "date"     : "2022-03-01"
-     } ,
-    
-     {
-       "title"    : "맥(macOS)에서 자바(java) 설치, 이클립스 설치",
-       "url"      : "/install-java/",
-       "date"     : "2022-02-23"
-     } ,
-    
-     {
-       "title"    : "test",
-       "url"      : "/java/Mountain/",
-       "date"     : "2022-02-21"
-     } ,
-    
-     {
-       "title"    : "마크다운 기초",
-       "url"      : "/gitblog/markdown/",
-       "date"     : "2022-02-18"
      } 
     
 ]

@@ -6,17 +6,26 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: vveny's blog
-email: viin99@naver.com
-description: > # this means to ignore newlines until "baseurl:"
-    하루하루 공부한 내용을 정리하는 블로그입니다! java, Spring Boot, Back-end
-baseurl: '' # the subpath of your site, e.g. /blog
-lang: 'ko'
-url: 'https://vveny.github.io' # the base hostname & protocol for your site
-# twitter_username: vveny's Blog
-github_username: vveny
-#disqus_username:
-category_dir: category/
+
+# 블로그 타이틀 설정
+title: vveny's blog 
+# 자신의 이메일 설정
+email: viin99@naver.com 
+description: > # this means to ignore newlines until "baseurl:", 메타정보입니다.
+    하루하루 공부한 내용을 정리하는 블로그입니다! java, Spring Boot, Back-end 
+# 아마 블로그 검색시 나오게 되는 정보인 것 같습니다만....아직 검색에 문제가 생겨...확실하진 않습니다ㅠ
+
+# 아래 url과 같이 적거나 공백. 서브 경로가 있는 경우에만 적어줍니다.
+baseurl: '' 
+# 언어 설정해줬습니다!
+lang: 'ko' 
+# 자신의 깃블로그 주소를 적어줍니다.
+url: 'https://vveny.github.io' 
+# 이부분은 트위터 있으시면 작성해주시면 됩니다! 저는 트위터는 없어서 주석 그대로 두었습니다.
+# twitter_username: 
+# github에서 사용 중인 이름을 작성해줍니다.
+github_username: vveny 
+# disqus_username:
 
 # Build settings
 markdown: kramdown
@@ -27,7 +36,6 @@ future: true
 safe: false
 lsi: false
 excerpt_separator: "\n\n"
-toc: true
 
 # Theme settings
 compress_html:

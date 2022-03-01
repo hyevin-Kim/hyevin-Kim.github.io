@@ -2,55 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>하루하루 공부한 내용을 정리하는 블로그입니다! java, Spring Boot, Back-end
+    <description>하루하루 공부한 내용을 정리하는 블로그입니다! java, Spring Boot, Back-end 
 </description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
 	<lastBuildDate>Tue, 01 Mar 2022 00:00:00 +0900</lastBuildDate>
 	
 	<item>
-		<title>git blog 만들기</title>
+		<title>[git blog]step00 - 테마 Voyager 적용</title>
         
         
-            <description>git blog 검색엔진 최적화하기</description>
+            <description>테마 Voyager 적용기</description>
         
         <pubDate>Tue, 01 Mar 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/gitblog/git-blog/</link>
-        <guid isPermaLink="true">http://localhost:4000/gitblog/git-blog/</guid>
-      </item>
-    
-	<item>
-		<title>맥(macOS)에서 자바(java) 설치, 이클립스 설치</title>
-        
-        
-            <description>맥(macOS)에서 자바(java) 설치, 이클립스 설치</description>
-        
-        <pubDate>Wed, 23 Feb 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/install-java/</link>
-        <guid isPermaLink="true">http://localhost:4000/install-java/</guid>
-      </item>
-    
-	<item>
-		<title>test</title>
-        
-        
-            <description>
-</description>
-        
-        <pubDate>Mon, 21 Feb 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/java/Mountain/</link>
-        <guid isPermaLink="true">http://localhost:4000/java/Mountain/</guid>
-      </item>
-    
-	<item>
-		<title>마크다운 기초</title>
-        
-        
-            <description>맥(macOS)에서 자바(java) 설치, 이클립스 설치</description>
-        
-        <pubDate>Fri, 18 Feb 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/gitblog/markdown/</link>
-        <guid isPermaLink="true">http://localhost:4000/gitblog/markdown/</guid>
+        <link>http://localhost:4000/git-blog/git-blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/git-blog/git-blog/</guid>
       </item>
     
   </channel>
