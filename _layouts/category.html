@@ -5,9 +5,10 @@ layout: default
 {% assign category =  page.category| default: page.title %}
 {% for post in site.categories[category] %}
     <article class="index-page">
-        <h4>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h4>
+        <div class = "all-box">
+            <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+            <p class="ca-all-box_date">{{ post.date | date: "%Y-%m-%d" }}</p>
+        </div>
         {{ post.excerpt }}
     </article>
 {% endfor %}

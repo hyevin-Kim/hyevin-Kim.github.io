@@ -342,10 +342,28 @@ article {
 }
 
 /*어쩌다보니*/
-
 .search__date {
 	text-align: right;
 	float: right;
 	color: #333;
 	display: none;
 }
+
+/*allpost 페이지 css 수정본*/
+.all-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.all-box_date {
+  font-size: smaller;
+  color: #d4d4d4;
+  margin-top: 15px;
+}
+
+.ca-all-box_date {
+  font-size: smaller;
+  color: #d4d4d4;
+  margin-top: 35px;
+}
+

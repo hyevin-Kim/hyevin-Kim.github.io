@@ -10,7 +10,10 @@ active: all
 
 {% for post in site.posts limit: 20 %}
   <article class="index-page">
-	<h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  <div class = "all-box">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <span class="all-box_date">{{ post.date | date: "%Y-%m-%d" }}</span>
+  </div>
 	<p>{{ post.summary }}</p>
   </article>
 {% endfor %}
