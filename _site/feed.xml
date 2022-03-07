@@ -1,22 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>vveny's blog</title>
     <description>하루하루 공부한 내용을 정리하는 블로그입니다! java, Spring Boot, Back-end 
 </description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0900</lastBuildDate>
-	
-	<item>
-		<title>[git blog]step00 - 테마 Voyager 적용</title>
-        
-        
-            <description>테마 Voyager 적용기</description>
-        
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 07 Mar 2022 14:08:48 +0900</pubDate>
+    <lastBuildDate>Mon, 07 Mar 2022 14:08:48 +0900</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>[git blog]step00 - 테마 Voyager 적용</title>
+        <description>&lt;h1 id=&quot;git-blog를-시작하게-된-이유&quot;&gt;git blog를 시작하게 된 이유&lt;/h1&gt;
+&lt;p&gt;원래 3월 전에 git blog를 만들고, 배운 것을 기록하려고 했으나…생각보다 만드는 것이 오래걸렸습니다.&lt;br /&gt;
+강의를 보면서 만드는 데도 다른 테마로 만들어서 “오류 -&amp;gt; 해결”의 반복을 겪다가 여기까지 왔습니다.&lt;br /&gt;
+시간이 생각보다 많이 걸렸고, 사실 지금도 마음에 쏙 들게 완성이 된 것은 아니지만…&lt;br /&gt;
+그래도 틀은 잡힌 것 같아서 지금부터 기록을 작성해보려고 합니다!&lt;br /&gt;
+테마 “Voyager”를 어떻게 변경했는지를 다루려고 하기 때문에&lt;br /&gt;
+github 레파지토리 만드는 것까지 작성하진 않았습니다😆
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;jekyll--사용하는-이유&quot;&gt;jekyll? &amp;amp; 사용하는 이유&lt;/h1&gt;
+&lt;p&gt;처음 git blog를 만드려고 했을 때 jekyll를 사용해서 만들어야 한다는 것을 알고..왜?&lt;br /&gt;
+라는 생각을 했고, 찾아봤습니다. &lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll은 Markdown 형식의 텍스트 파일을 HTML 파일로 변환해 주는 하나의 변환 도구&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;이처럼 Jekyll이 HTML 파일로 만들어 주니까 사용자는 블로그에 포스팅시 Markdown으로 작성하고&lt;br /&gt;
+나중에 Jekyll로 빌드해서 서버에 올리면 된다고합니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;공식 홈페이지&lt;br /&gt;
+    &lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;jekyll&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;homebrew-ruby-gem-설치&quot;&gt;Homebrew, Ruby, gem 설치&lt;/h1&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 1번&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Mac에서는 Homebrew로 패키지를 설치 및 관리하는 것이 좋다고 합니다!&lt;/span&gt;
+/bin/bash &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 2번&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# brew를 사용하여 rbenv라는 Ruby 버전 관리자를 설치합니다.&lt;/span&gt;
+brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;rbenv
+
+&lt;span class=&quot;c&quot;&gt;# 3번&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# rbenv를 초기화 해준 후&lt;/span&gt;
+rbenv init
+
+&lt;span class=&quot;c&quot;&gt;# 4번&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 설치가 제대로 되었는지 확인합니다.&lt;/span&gt;
+curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
+
+&lt;span class=&quot;c&quot;&gt;# 5번&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 전 강의를 보면서 해서 Ruby버전 2.7.2를 rbenv를 사용하여 설치해서 진행했습니다.&lt;/span&gt;
+rbenv &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;2.7.2
+
+&lt;span class=&quot;c&quot;&gt;# 6번&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 2.7.4버전을 Main으로 고정한 뒤&lt;/span&gt;
+rbenv global 2.7.2
+
+&lt;span class=&quot;c&quot;&gt;# 7번&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 현재 실행 버전을 테스트합니다.&lt;/span&gt;
+ruby &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 마지막으로 이렇게 결과가 나왔을 때 다음으로 진행했습니다!&lt;/span&gt;
+ruby 2.7.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;테마-선택---voyager&quot;&gt;테마 선택 - Voyager&lt;/h1&gt;
+&lt;p&gt;강의에서 선택한 사이트는 제 마음에 들지 않아서 새로운 사이트를 찾아봤고, 이 테마 말고&lt;br /&gt;
+2-3개 정도 다른 사이트로 설정해봤으나,,,무엇인가 오류가 나고, 적용이 되지 않아서..ㅜ&lt;br /&gt;
+아직까지 오류가 나지 않고 새롭게 바꾸는 것에도 적용이 잘 되고 있는 이 테마로 정착했습니다!&lt;br /&gt;
+아래 사이트에서 “Voyager”로 검색헤서 적용하면 됩니다!&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;jekyll 테마 사이트&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+사실 다른 테마를 사용하셔도 “_config.yml”파일만 변경해주시면, 어렵지 않습니다!
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;테마-설정-변경&quot;&gt;테마 설정 변경&lt;/h1&gt;
+&lt;p&gt;_config.yml 파일 설정부분!&lt;/p&gt;
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Site settings&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 블로그 타이틀 설정&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;vveny's blog&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 자신의 이메일 설정&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;viin99@naver.com&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# this means to ignore newlines until &quot;baseurl:&quot;, 메타정보입니다.&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;하루하루 공부한 내용을 정리하는 블로그입니다! java, Spring Boot, Back-end&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 아마 블로그 검색시 나오게 되는 정보인 것 같습니다만....아직 검색에 문제가 생겨...확실하진 않습니다ㅠ&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 아래 url과 같이 적거나 공백. 서브 경로가 있는 경우에만 적어줍니다.&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;baseurl&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 언어 설정해줬습니다!&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;ko'&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 자신의 깃블로그 주소를 적어줍니다.&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;https://vveny.github.io'&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 이부분은 트위터 있으시면 작성해주시면 됩니다! 저는 트위터는 없어서 주석 그대로 두었습니다.&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# twitter_username:&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# github에서 사용 중인 이름을 작성해줍니다.&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;github_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;vveny&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# disqus_username:&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;위처럼 설정했습니다! 다른 부분들은 모르는 부분이라….그대로 두었습니다.&lt;br /&gt;
+혹여 다른 사항을 알게 되면 수정하겠습니다!
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;테마-적용-확인-방법&quot;&gt;테마 적용 확인 방법&lt;/h1&gt;
+&lt;p&gt;vscode로 진행했기에 프로그램을 열고, 자신의 블로그 root폴더로 가줍니다.&lt;br /&gt;
+&lt;img src=&quot;/assets/images/gitblog/22-03-02/01.png&quot; alt=&quot;01&quot; /&gt;
+터미널을 열고 아래 명령어를 순서대로 입력해줍니다.&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 1번&lt;/span&gt;
+gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bundler jekyll minima jekyll-feed tzinfo-data rdiscount
+
+&lt;span class=&quot;c&quot;&gt;# 2번&lt;/span&gt;
+bundle &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 3번&lt;/span&gt;
+bundle update
+
+&lt;span class=&quot;c&quot;&gt;# 4번&lt;/span&gt;
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;오류&quot;&gt;오류…&lt;/h4&gt;
+&lt;p&gt;위의 방법대로 설치하다가 오류가 나서 푸른쿠우님 &lt;a href=&quot;https://choijaegwon.github.io/githubblog/GithubBlog1/&quot;&gt;블로그&lt;/a&gt;를 보면서 다시 설치했습니다ㅜ
+무슨 오류인지는 다시 정리하겠습니다! 검색해도 찾기 힘들어서….많이 슬펐던…&lt;br /&gt;
+물론 아예 삭제하고 새로운 파일에다가 재설치하니 잘 작동했습니다! ^ㅁ^ &lt;br /&gt;
+설치를 잘못했던 건지 아니면 진짜 무슨 오류였던 건지는 새로운 파일에 다시 설치해보고 수정하겠습니다!!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+3번 명령어 실행시&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;_plugins, _site, .jekyll-cache, .sass-cache&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;위의 파일이 생성되면 성공입니다!👏&lt;br /&gt;
+아래에 있는 사진처럼 다 나오는 건 아니고, 위의 파일들이 대략적으로 생성되면 됩니다!
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/gitblog/22-03-02/02.png&quot; alt=&quot;02&quot; /&gt;
+&lt;br /&gt;
+결과적으로 4번 명령어를 실행하게 되면 위 사진처럼 터미널에 나올 겁니다.&lt;br /&gt;
+그러면 링크 따라가기로 실행하시면 실시간으로 블로그를 보실 수 있습니다!&lt;br /&gt;&lt;/p&gt;
+
+</description>
         <pubDate>Wed, 02 Mar 2022 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/git-blog/git-blog/</link>
         <guid isPermaLink="true">http://localhost:4000/git-blog/git-blog/</guid>
+        
+        <category>git blog</category>
+        
+        
+        <category>git-blog</category>
+        
       </item>
     
   </channel>

@@ -16,7 +16,7 @@ description: > # this means to ignore newlines until "baseurl:", 메타정보입
 # 아마 블로그 검색시 나오게 되는 정보인 것 같습니다만....아직 검색에 문제가 생겨...확실하진 않습니다ㅠ
 
 # 아래 url과 같이 적거나 공백. 서브 경로가 있는 경우에만 적어줍니다.
-baseurl: 'https://vveny.github.io' 
+baseurl: '' 
 # 언어 설정해줬습니다!
 lang: 'ko' 
 # 자신의 깃블로그 주소를 적어줍니다.
