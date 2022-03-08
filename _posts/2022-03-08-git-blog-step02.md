@@ -12,7 +12,7 @@ author: vvney
 
 # utterances란?
 > 공식 홈페이지<br>
-    [utterances](https://utteranc.es/)
+    [utterances](https://utteranc.es/) 
 
 utterances는 깃허브의 이슈기능을 가지고 댓글을 생성해준다고 합니다.<br>
 게시글 하나가 이슈 하나와 한 쌍이 되고, 게시글에 댓글을 달면 해당 이슈에 댓글이 달립니다.<br>
@@ -32,20 +32,42 @@ utterances는 깃허브의 이슈기능을 가지고 댓글을 생성해준다�
 <br>
 
 # utterances 적용!
-참고한 블로그 [공부하는 식빵맘](https://ansohxxn.github.io/blog/utterances/)님
-#### 1. 댓글 Issue가 올라올 저장소를 정하거나 혹은 생성합니다.
+적용하는 방법으로 참고한 블로그는 [공부하는 식빵맘](https://ansohxxn.github.io/blog/utterances/)님입니다!
+<br><br>
+
+#### 1. 댓글 Issue가 올라올 저장소를 정하거나 혹은 생성합니다.  
+
 #### 2. utterance 를 Install 설치 합니다.
-#### 3. 설치 후 페이지에서 설정해줍니다.
-사진 참고
-참고한 블로그에서는 코드를 사용하지 않아도 되지만, 제가 사용하는 테마는 없기때문에  
-코드를 사용해서 만들어봅니다!
-#### 4. 포스트 아래 댓글 생성기
-##### 4-1. _includes > my-comments.html
-~~~html
-<aside class="comments" role="complementary">
-    <h2>Comments</h2>
-    <hr/>
-    #복사한 코드는 여기에 붙여넣어주세요.
+<https://github.com/apps/utterances> 사이트로 이동 후 설치합니다.  
+![00](/assets/images/gitblog/22-03-08/00.png){: width="400" height="400"}
+위 사진처럼 설정하고 request 눌러줍니다.<br>
+
+#### 3. reques 후 페이지에서 설정해줍니다.
+설치가 된 후 페이지에서 configuration부분을 찾아줍니다. 
+![01](/assets/images/gitblog/22-03-08/01.png)
+
+**repo: 댓글 Issue가 올라올 곳으로 선택한 저장소의 permalink를 작성합니다.(github아이디/저장소이름)
+ex)vveny/-comments** <br>
+![02](/assets/images/gitblog/22-03-08/02.png)
+Blog post <–> Issue: 매핑 방식을 선택
+1. pathname  
+포스트의 pathname으로 이슈를 생성합니다.  
+이 경우 /blog/2020/12/18/utterances- 적용으로 이슈가 생성되어 매핑된다고합니다.  
+![03](/assets/images/gitblog/22-03-08/03.png)
+Theme: 테마 중 자신의 블로그 테마와 어울리는 것으로 선택합니다.  
+아래 코드: 복사합니다.
+
+#### 4. 복사 코드
+참고한 블로그에서는 이미 _config.yml부분에 있어서 설정만 해주셨지만...  
+제가 선택한 테마는 없어서 따로 넣어주었습니다.  
+<br>
+
+붙여넣을 코드  
+~~~markdown
+<!--댓글기능 첨부-->
+  <div>
+    <h3>🙌COMMENTS</h3>
+    <!--이곳에 자신이 복사한 코드를 붙여주면 됩니다!-->
     <script src="https://utteranc.es/client.js"
         repo="vveny/-comments"
         issue-term="pathname"
@@ -53,5 +75,16 @@ utterances는 깃허브의 이슈기능을 가지고 댓글을 생성해준다�
         crossorigin="anonymous"
         async>
     </script>
-</aside>
-~~~
+  </div>
+~~~  
+
+_layouts폴더 중 post.html에 들어갑니다.  
+![04](/assets/images/gitblog/22-03-08/04.png){: width="400" height="400"}
+<br>
+
+아래 사진처럼 댓글이 들어가면 좋을 곳에 붙여줍니다.
+저는 포스트 옆으로 이동하는 것 이후에 넣어주었습니다!
+![05](/assets/images/gitblog/22-03-08/05.png)
+
+git에 commit 및 push합니다!  
+이러면 아래에 보이는 것처럼 완성됐습니다!

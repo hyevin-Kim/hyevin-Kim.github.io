@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Mar 2022 18:02:42 +0900</pubDate>
-    <lastBuildDate>Tue, 08 Mar 2022 18:02:42 +0900</lastBuildDate>
+    <pubDate>Tue, 08 Mar 2022 18:55:06 +0900</pubDate>
+    <lastBuildDate>Tue, 08 Mar 2022 18:55:06 +0900</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -40,28 +40,63 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;utterances-적용&quot;&gt;utterances 적용!&lt;/h1&gt;
-&lt;p&gt;참고한 블로그 &lt;a href=&quot;https://ansohxxn.github.io/blog/utterances/&quot;&gt;공부하는 식빵맘&lt;/a&gt;님&lt;/p&gt;
+&lt;p&gt;적용하는 방법으로 참고한 블로그는 &lt;a href=&quot;https://ansohxxn.github.io/blog/utterances/&quot;&gt;공부하는 식빵맘&lt;/a&gt;님입니다!
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;h4 id=&quot;1-댓글-issue가-올라올-저장소를-정하거나-혹은-생성합니다&quot;&gt;1. 댓글 Issue가 올라올 저장소를 정하거나 혹은 생성합니다.&lt;/h4&gt;
+
 &lt;h4 id=&quot;2-utterance-를-install-설치-합니다&quot;&gt;2. utterance 를 Install 설치 합니다.&lt;/h4&gt;
-&lt;h4 id=&quot;3-설치-후-페이지에서-설정해줍니다&quot;&gt;3. 설치 후 페이지에서 설정해줍니다.&lt;/h4&gt;
-&lt;p&gt;사진 참고
-참고한 블로그에서는 코드를 사용하지 않아도 되지만, 제가 사용하는 테마는 없기때문에&lt;br /&gt;
-코드를 사용해서 만들어봅니다!&lt;/p&gt;
-&lt;h4 id=&quot;4-포스트-아래-댓글-생성기&quot;&gt;4. 포스트 아래 댓글 생성기&lt;/h4&gt;
-&lt;h5 id=&quot;4-1-_includes--my-commentshtml&quot;&gt;4-1. _includes &amp;gt; my-comments.html&lt;/h5&gt;
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;aside&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;comments&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;complementary&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Comments&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr/&amp;gt;&lt;/span&gt;
-    #복사한 코드는 여기에 붙여넣어주세요.
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://utteranc.es/client.js&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;repo=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;vveny/-comments&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;issue-term=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pathname&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;theme=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;github-light&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;crossorigin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;anonymous&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;async&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/apps/utterances&quot;&gt;https://github.com/apps/utterances&lt;/a&gt; 사이트로 이동 후 설치합니다.&lt;br /&gt;
+&lt;img src=&quot;/assets/images/gitblog/22-03-08/00.png&quot; alt=&quot;00&quot; width=&quot;400&quot; height=&quot;400&quot; /&gt;
+위 사진처럼 설정하고 request 눌러줍니다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;3-reques-후-페이지에서-설정해줍니다&quot;&gt;3. reques 후 페이지에서 설정해줍니다.&lt;/h4&gt;
+&lt;p&gt;설치가 된 후 페이지에서 configuration부분을 찾아줍니다. 
+&lt;img src=&quot;/assets/images/gitblog/22-03-08/01.png&quot; alt=&quot;01&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;repo: 댓글 Issue가 올라올 곳으로 선택한 저장소의 permalink를 작성합니다.(github아이디/저장소이름)
+ex)vveny/-comments&lt;/strong&gt; &lt;br /&gt;
+&lt;img src=&quot;/assets/images/gitblog/22-03-08/02.png&quot; alt=&quot;02&quot; /&gt;
+Blog post &amp;lt;–&amp;gt; Issue: 매핑 방식을 선택&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;pathname&lt;br /&gt;
+포스트의 pathname으로 이슈를 생성합니다.&lt;br /&gt;
+이 경우 /blog/2020/12/18/utterances- 적용으로 이슈가 생성되어 매핑된다고합니다.&lt;br /&gt;
+&lt;img src=&quot;/assets/images/gitblog/22-03-08/03.png&quot; alt=&quot;03&quot; /&gt;
+Theme: 테마 중 자신의 블로그 테마와 어울리는 것으로 선택합니다.&lt;br /&gt;
+아래 코드: 복사합니다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;4-복사-코드&quot;&gt;4. 복사 코드&lt;/h4&gt;
+&lt;p&gt;참고한 블로그에서는 이미 _config.yml부분에 있어서 설정만 해주셨지만…&lt;br /&gt;
+제가 선택한 테마는 없어서 따로 넣어주었습니다.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;붙여넣을 코드&lt;/p&gt;
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--댓글기능 첨부--&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;🙌COMMENTS&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--이곳에 자신이 복사한 코드를 붙여주면 됩니다!--&amp;gt;&lt;/span&gt;
+    &amp;lt;script src=&quot;https://utteranc.es/client.js&quot;
+        repo=&quot;vveny/-comments&quot;
+        issue-term=&quot;pathname&quot;
+        theme=&quot;github-light&quot;
+        crossorigin=&quot;anonymous&quot;
+        async&amp;gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/aside&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;_layouts폴더 중 post.html에 들어갑니다.&lt;br /&gt;
+&lt;img src=&quot;/assets/images/gitblog/22-03-08/04.png&quot; alt=&quot;04&quot; width=&quot;400&quot; height=&quot;400&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;아래 사진처럼 댓글이 들어가면 좋을 곳에 붙여줍니다.
+저는 포스트 옆으로 이동하는 것 이후에 넣어주었습니다!
+&lt;img src=&quot;/assets/images/gitblog/22-03-08/05.png&quot; alt=&quot;05&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;git에 commit 및 push합니다!&lt;br /&gt;
+이러면 아래에 보이는 것처럼 완성됐습니다!&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Mar 2022 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/git-blog/git-blog-step02/</link>
