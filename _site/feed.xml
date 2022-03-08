@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Mar 2022 15:46:17 +0900</pubDate>
-    <lastBuildDate>Tue, 08 Mar 2022 15:46:17 +0900</lastBuildDate>
+    <pubDate>Tue, 08 Mar 2022 18:02:42 +0900</pubDate>
+    <lastBuildDate>Tue, 08 Mar 2022 18:02:42 +0900</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -19,9 +19,49 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;utterances는 깃허브의 이슈기능을 가지고 댓글을 생성해준다고 합니다.&lt;br /&gt;
-게시글 하나가 이슈 하나와 한 쌍이 되고, 게시글에 댓글을 달면 해당 이슈에 댓글이 달립니다.&lt;br /&gt;&lt;/p&gt;
+게시글 하나가 이슈 하나와 한 쌍이 되고, 게시글에 댓글을 달면 해당 이슈에 댓글이 달립니다.&lt;br /&gt;
+댓글 창은 iframe으로 동작하며 해당 페이지가 로드 될 때, 페이지의 URL, pathname, 혹은 title을 가지고 issue search API를 통해 해당 이슈에 달린 댓글을 로딩하여 댓글 창에 로딩시켜준다고 합니다!&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;utterances-장점&quot;&gt;utterances 장점!&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;댓글 알림을 받을 수 있습니다.&lt;br /&gt;
+ -github issues를 댓글 쓰레드로 사용하는 utterances는 댓글이 등록되면,&lt;br /&gt;
+ 새로운 issue가 등록된 것이므로 메일 알림을 받을 수 있습니다.&lt;br /&gt;&lt;/li&gt;
+    &lt;li&gt;설치 및 설정이 쉽습니다.&lt;br /&gt;
+-utterances앱을 깃허브 계정에 추가, 댓글 저장 용도로 사용될 신규 레포지토리에 권한을 주면 됩니다.&lt;br /&gt;
+-이후 댓글 영역에 스크립트 코드 한 줄만 추가해주면 셋팅이 끝납니다.&lt;/li&gt;
+    &lt;li&gt;Markdown 문법을 이용하여 댓글 작성이 가능합니다.&lt;br /&gt;
+-github 플랫폼 이용으로 마크다운 문법 사용이 가능합니다.&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;utterances-적용&quot;&gt;utterances 적용!&lt;/h1&gt;
+&lt;p&gt;참고한 블로그 &lt;a href=&quot;https://ansohxxn.github.io/blog/utterances/&quot;&gt;공부하는 식빵맘&lt;/a&gt;님&lt;/p&gt;
+&lt;h4 id=&quot;1-댓글-issue가-올라올-저장소를-정하거나-혹은-생성합니다&quot;&gt;1. 댓글 Issue가 올라올 저장소를 정하거나 혹은 생성합니다.&lt;/h4&gt;
+&lt;h4 id=&quot;2-utterance-를-install-설치-합니다&quot;&gt;2. utterance 를 Install 설치 합니다.&lt;/h4&gt;
+&lt;h4 id=&quot;3-설치-후-페이지에서-설정해줍니다&quot;&gt;3. 설치 후 페이지에서 설정해줍니다.&lt;/h4&gt;
+&lt;p&gt;사진 참고
+참고한 블로그에서는 코드를 사용하지 않아도 되지만, 제가 사용하는 테마는 없기때문에&lt;br /&gt;
+코드를 사용해서 만들어봅니다!&lt;/p&gt;
+&lt;h4 id=&quot;4-포스트-아래-댓글-생성기&quot;&gt;4. 포스트 아래 댓글 생성기&lt;/h4&gt;
+&lt;h5 id=&quot;4-1-_includes--my-commentshtml&quot;&gt;4-1. _includes &amp;gt; my-comments.html&lt;/h5&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;aside&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;comments&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;complementary&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Comments&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr/&amp;gt;&lt;/span&gt;
+    #복사한 코드는 여기에 붙여넣어주세요.
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://utteranc.es/client.js&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;repo=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;vveny/-comments&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;issue-term=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pathname&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;theme=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;github-light&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;crossorigin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;anonymous&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;async&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/aside&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 08 Mar 2022 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/git-blog/git-blog-step02/</link>
