@@ -21,7 +21,7 @@ layout: default
   </p>
 
   <div class="post-content">
-
+    <!--목차기능 첨부-->
     <details>
       <summary>🙌 목차</summary>
       <div class="toc">
@@ -31,6 +31,7 @@ layout: default
 
     {{ content }}
 
+    <!--옆 포스트로 이동하는 기능-->
     <div class="post-links">
       {% if page.next.url %}
         <a class="link-to-post" href="{{ page.next.url | relative_url}}">
@@ -48,5 +49,15 @@ layout: default
     </div>
 
   </div>
-
+  <!--댓글기능 첨부-->
+  <div>
+    <h3>🙌COMMENTS</h3>
+    <script src="https://utteranc.es/client.js"
+        repo="vveny/-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
+  </div>
 </article>
