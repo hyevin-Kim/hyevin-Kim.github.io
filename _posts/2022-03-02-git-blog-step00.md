@@ -2,10 +2,9 @@
 bg: "./gitblog/basic.jpeg"
 layout: post
 title: "[git blog]step00 - 테마 Voyager 적용"
-crawlertitle: "git blog 만들기 기록"
+crawlertitle: "[git blog]step00"
 date: 2022-03-02
-summary: "git blog 만들기 step00"
-excerpt: "테마 Voyager 적용기"
+summary: "테마 Voyager 적용기"
 category: "git-blog"
 tags: [git blog]
 author: vvney
