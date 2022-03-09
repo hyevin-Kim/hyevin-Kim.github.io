@@ -34,20 +34,43 @@ layout: default
     <!--옆 포스트로 이동하는 기능-->
     <div class="post-links">
       {% if page.next.url %}
-        <a class="link-to-post" href="{{ page.next.url | relative_url}}">
-          <span class="link-to-post__next">&#10535; &nbsp;Next post</span>
-          <span class="link-to-post__title">{{ page.next.title }}</span>
-        </a>
+      <a class="link-to-post" href="{{ page.next.url | relative_url}}">
+        <span class="link-to-post__next">&#10535; &nbsp;Next post</span>
+        <span class="link-to-post__title">{{ page.next.title }}</span>
+      </a>
       {% endif %}
-
+      
       {% if page.previous.url %}
-        <a class="link-to-post" href="{{ page.previous.url | relative_url}}">
-          <span class="link-to-post__prev">&#10535; &nbsp;Previous post</span>
-          <span class="link-to-post__title">{{ page.previous.title }}</span>
-        </a>
+      <a class="link-to-post" href="{{ page.previous.url | relative_url}}">
+        <span class="link-to-post__prev">&#10535; &nbsp;Previous post</span>
+        <span class="link-to-post__title">{{ page.previous.title }}</span>
+      </a>
       {% endif %}
     </div>
-
+    
+    <!--카테고리 내 최근 목록-->
+    <div>
+      <h3>👋Other articles in this category</h3>
+      {% assign cate = page.category %}
+      {% for pos in site.pages %}
+      {% assign pt = pos.title %}
+      {% if cate == pt %}
+      <ul class="year">
+	      {% for post in site.categories[cate] limit: 5 %}
+	      <li>
+		      {% if post.lastmod %}
+		      <a href="{{ post.url | relative_url}}">{{ post.title }}</a>
+		      <span class="date">{{ post.lastmod | date: "%Y-%m-%d" }}</span>
+		      {% else %}
+		      <a href="{{ post.url | relative_url}}">{{ post.title }}</a>
+		      <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+		      {% endif %}
+	      </li>
+	      {% endfor %}
+      </ul>
+      {% endif %}
+      {% endfor %}
+    </div>
   </div>
   
   <!--댓글기능 첨부-->

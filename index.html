@@ -13,7 +13,7 @@ summary: 'java, Spring Boot <br> Back-end'
 {% if cate == pt %}
 <h2 class="category-key" id="{{ pt | downcase }}">{{ pt | capitalize }}</h2>
 <ul class="year">
-	{% for post in site.categories[cate] %}
+	{% for post in site.categories[cate] limit: 5 %}
 	<li>
 		{% if post.lastmod %}
 		<a href="{{ post.url | relative_url}}">{{ post.title }}</a>
