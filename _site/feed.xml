@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Mar 2022 18:55:06 +0900</pubDate>
-    <lastBuildDate>Tue, 08 Mar 2022 18:55:06 +0900</lastBuildDate>
+    <pubDate>Wed, 09 Mar 2022 09:37:28 +0900</pubDate>
+    <lastBuildDate>Wed, 09 Mar 2022 09:37:28 +0900</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -99,13 +99,13 @@ Theme: 테마 중 자신의 블로그 테마와 어울리는 것으로 선택합
 이러면 아래에 보이는 것처럼 완성됐습니다!&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Mar 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/git-blog/git-blog-step02/</link>
-        <guid isPermaLink="true">http://localhost:4000/git-blog/git-blog-step02/</guid>
+        <link>http://localhost:4000/git%20blog/git-blog-step02/</link>
+        <guid isPermaLink="true">http://localhost:4000/git%20blog/git-blog-step02/</guid>
         
         <category>git blog</category>
         
         
-        <category>git-blog</category>
+        <category>git blog</category>
         
       </item>
     
@@ -401,13 +401,13 @@ _   underscore
 &lt;/details&gt;
 </description>
         <pubDate>Mon, 07 Mar 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/git-blog/git-blog-step01/</link>
-        <guid isPermaLink="true">http://localhost:4000/git-blog/git-blog-step01/</guid>
+        <link>http://localhost:4000/git%20blog/git-blog-step01/</link>
+        <guid isPermaLink="true">http://localhost:4000/git%20blog/git-blog-step01/</guid>
         
         <category>git blog</category>
         
         
-        <category>git-blog</category>
+        <category>git blog</category>
         
       </item>
     
@@ -555,13 +555,13 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
 
 </description>
         <pubDate>Wed, 02 Mar 2022 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/git-blog/git-blog-step00/</link>
-        <guid isPermaLink="true">http://localhost:4000/git-blog/git-blog-step00/</guid>
+        <link>http://localhost:4000/git%20blog/git-blog-step00/</link>
+        <guid isPermaLink="true">http://localhost:4000/git%20blog/git-blog-step00/</guid>
         
         <category>git blog</category>
         
         
-        <category>git-blog</category>
+        <category>git blog</category>
         
       </item>
     
