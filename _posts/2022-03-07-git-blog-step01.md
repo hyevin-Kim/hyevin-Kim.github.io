@@ -5,7 +5,7 @@ title: "[git blog]step01 - 내가 기억하려고 작성한 마크다운 문법!
 crawlertitle: "[git blog]step01"
 date: 2022-03-07
 summary: "검색하기 귀찮아서 모아놓은 자주 사용하는 마크다운 문법?"
-category: "git blog"
+category: "git-blog"
 tags: [git blog]
 author: vvney
 ---

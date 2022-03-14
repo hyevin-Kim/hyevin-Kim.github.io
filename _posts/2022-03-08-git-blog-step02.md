@@ -5,7 +5,7 @@ title: "[git blog]step02 - utterances으로 댓글 기능 만들기"
 crawlertitle: "[git blog]step02"
 date: 2022-03-08
 summary: "댓글 기능 수난기"
-category: "git blog"
+category: "git-blog"
 tags: [git blog]
 author: vvney
 ---
