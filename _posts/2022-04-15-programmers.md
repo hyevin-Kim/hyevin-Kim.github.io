@@ -15,9 +15,9 @@ author: vvney
 로 해석했습니다.
 
 ### 해결순서
-1. 먼저 뽑을 수 있는 숫자 변수를 선언했습니다.
-2. 폰켓몬 종류 수를 알아야하기때문에 중복 없이 새로운 배열에 담았습니다.
-3. 종류가 가져갈 수 있는 수보다 많을 때, 가져갈 수 있는 수가 종류보다 많을 때, 둘이 동일할 때를 구분해서 return해주었습니다.
+1. 문자열 개수를 확인 후 마지막 4자리를 전까지의 숫자를 index로 선언 후
+2. 4자리 전까지 *로 변환해서 answer에 저장했습니다.
+3. 그 후 answer에 마지막 4자리 파싱해서 리턴해줍니다.
 
 
 ### 제출코드
@@ -25,17 +25,23 @@ author: vvney
 <summary>펼치기</summary>
 <div markdown="1">
 ~~~java
-String answer = "";
+class Solution {
+    public String solution(String phone_number) {
+        String answer = "";
 
-        //length()로 문자열 개수를 확인 후 마지막 4자리 제외한 숫자를 index 선언
+         //length()로 문자열 개수를 확인 후 마지막 4자리 제외한 숫자를 index 선언
         int index= phone_number.length()-4;
 
-        //4자리 전까지 * 변환
+         //4자리 전까지 * 변환
         for(int i= 0; i < index; i++){
             answer += "*";
         }
 
         //마지막 4자리 추출해서 값 추가
         //substring(시작값,끝값)
-        answer += phone_number.substring(index, phone_number.length());
+        answer += (phone_number.substring(index, phone_number.length()));
+        return answer;
+    }
+}
 ~~~
+
