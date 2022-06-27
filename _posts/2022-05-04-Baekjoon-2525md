@@ -1,0 +1,57 @@
+---
+bg: "./programmers/basic.png"
+layout: post
+title: "[Baekjoon]2525 - 오븐 시계"
+crawlertitle: "2525 - 오븐 시계"
+date: 2022-05-04
+summary: "2525 - 오븐 시계"
+category: "Baekjoon"
+tags: [Baekjoon, 문제풀이, 코딩테스트, 2525]
+author: vvney
+---
+### 문제
+> 오븐 시계
+	첫번째 줄 시 분, 두번째 줄 분 입력값 로직: 분 이후의 시간 출력
+
+
+### 해결
+	1. if문을 활용합니다.
+
+
+### 제출코드
+<details>
+<summary>펼치기</summary>
+<div markdown="1">
+~~~java
+import java.util.Scanner;
+public class Main{
+	public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+		//시간, 분, 셋팅값을 입력받습니다.
+		int hr, min, set;
+		hr= sc.nextInt();
+		min= sc.nextInt();
+		set= sc.nextInt();
+		
+		sc.close();
+		//시값에 셋팅값을 60분(1시간단위)으로 나눠서 더해줍니다.
+		hr += set / 60;
+		//분값에 셋팅값을 60분(1분단위)으로 나눠서 더해줍니다.
+		min += set % 60;
+		
+		//분값이 60이 넘을경우 
+		//60을 나눠 몫을 시값에 더해줍니다.
+		hr += min / 60;
+		//60을 나눠 나머지를 분값에 더해줍니다.
+		min %= 60;
+		
+		//시값이 23이 넘는다면 -24를 해줍니다.
+		if(23 < hr)
+			hr -= 24;
+			
+		System.out.println(hr + " " + min);
+
+    }
+}
+~~~
+
